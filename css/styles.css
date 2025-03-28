@@ -43,10 +43,9 @@ nav {
     align-items: center;
 }
 /* Iconos en botones */
-.botonesheader a::before {
-    content: "🎬";
-    margin-right: 8px;
-}
+
+
+
 /*  LOGIN / REGISTER*/
 .iniciosesion {
     display: flex;
@@ -58,9 +57,8 @@ nav {
     font-weight: bold;
     padding: 8px 12px;
 }
-.iniciosesion a:hover {
-    background-color: #09bde5;
-}
+
+
 /* BARRA DE BÚSQUEDA */
 form {
     display: flex;
@@ -85,6 +83,40 @@ button {
     border-radius: 5px;
     font-weight: bold;
 }
-button:hover {
-    background-color: #5beef1;
-}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #6174a5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer span {
+    font-weight: bold;
+  }
+
+  main{
+    min-height: 600px;
+  }
+  
+  
