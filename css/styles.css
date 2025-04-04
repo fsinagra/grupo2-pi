@@ -5,10 +5,8 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(../img/fondo\ estrellas.jpeg); /* Fondo */
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #222; /* Fondo */
+
 }
 /* HEADER */
 .header {
@@ -17,11 +15,12 @@ body {
     justify-content: space-between;
     padding: 15px 40px;
     background-color: #6174a5; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* Logo */
 .logo {
-    height: 60px; /* Ajusta el tamaño del logo */
-    border-radius: 50% ; /* esto lo hace redondo*/
+    height: 100px; /* Ajusta el tamaño del logo */
+    border-radius: 40%;
 }
 /* NAVEGACIÓN */
 nav {
@@ -37,14 +36,12 @@ nav {
 .botonesheader a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     display: flex;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* Iconos en botones */
-
-
 
 /*  LOGIN / REGISTER*/
 .iniciosesion {
@@ -102,7 +99,7 @@ footer {
   }
   
   footer ul li {
-    display: inline;
+    display: inline; /*hace que todo quede en una misma linea */ 
     margin: 0 15px;
   }
   
@@ -116,7 +113,52 @@ footer {
   }
 
   main{
-    min-height: 600px;
+    margin-bottom: 40px;
+  }
+
+  .autoras{
+    display: block; /* que salte a una nueva linea y ocupe el ancho disponible */
+    margin-top: 10px; /*deja el espacio para el elemento de arriba */
   }
   
-  
+/* MAIN, IMAGENES */ 
+
+.titulos{
+    font-size: 30px;
+    text-align: left; /* por defecto es left */
+    color: #4a53fb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; /* por defecto es row */ 
+    gap: 50px;
+}
+
+.principal img{
+    width: 200px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.tituloPeli{
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 10px; /*lo separa de la imagen de arriba */
+}
+
+.estreno{
+    font-size:14px ;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color: white;
+}
