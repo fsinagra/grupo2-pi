@@ -162,3 +162,47 @@ footer {
     margin-top: 10px;
     color: white;
 }
+
+/* Login y registro */
+.contenedor{
+    width: 100%; /* Ocupa todo el espacio disponible */
+    max-width: 350px; 
+    margin: 50px auto 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho */
+    background-color: rgba(211, 211, 211, 0.475);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* esto para el contenedor de los botones */
+.botones{
+    display: flex;
+    justify-content: center; /* centra los botones*/
+    margin-top: 20px;
+    gap: 10px ;  /* esto separa los botones */ }
+
+/* esto para los botones en si */
+.botones button{
+    background-color: #8a90f4;
+   color: white;
+}
+
+/* esto es para los titulos inicio sesion y registro */
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.campotexto{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+/* esto para el cambio entre formularios */
+.cambioformulario{
+    color: #8a90f4;
+    text-decoration: none;
+}
