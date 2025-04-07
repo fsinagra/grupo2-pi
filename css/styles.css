@@ -8,8 +8,9 @@ body {
     background-color: #222; /* Fondo */
     text-align: center; /* esto es para que los formularios de login y register esten centrados */ 
 }
-/* hago esto para que todos los links dejen de estar subrayados */
-a {
+/* para que se aplique a todos los a */
+a{
+    color: white;
     text-decoration: none;
 }
 /* HEADER */
@@ -27,7 +28,7 @@ a {
     border-radius: 40%;
 }
 /* NAVEGACIÓN */
-nav {
+nav{
     margin-left: 40px;
 }
 .botonesheader {
@@ -39,7 +40,6 @@ nav {
 }
 .botonesheader a {
     text-decoration: none;
-    color: white;
     font-size: 18px;
     font-weight: bold;
     display: flex;
@@ -47,18 +47,14 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*  LOGIN / REGISTER*/
+/*  LOGIN  y REGISTER*/
 .iniciosesion {
     display: flex;
     gap: 15px;
 }
 .iniciosesion a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 8px 12px;
+   padding: 8px 10px ;
 }
-
 /* BARRA DE BÚSQUEDA */
 form {
     display: flex;
@@ -72,8 +68,8 @@ input {
     border: none;
     outline: none;
     padding: 8px;
-    color: white;
     width: 200px;
+    color: white;  /* define el color cuando escribis en la barra de busqueda */
 }
 button {
     background-color: #4a53fb;
@@ -88,7 +84,6 @@ button {
 
 footer {
     background-color: #6174a5;
-    color: white;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -104,12 +99,7 @@ footer {
     display: inline; /*hace que todo quede en una misma linea */ 
     margin: 0 15px;
   }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
-  }
-  
+   
   footer span {
     font-weight: bold;
   }
@@ -121,6 +111,7 @@ footer {
   .autoras{
     display: block; /* que salte a una nueva linea y ocupe el ancho disponible */
     margin-top: 10px; /*deja el espacio para el elemento de arriba */
+    color: white; /*como todos los otros elementos son a, y define el color con a, solo hay q aplciarle a esto*/ 
   }
   
 /* MAIN, IMAGENES */ 
@@ -167,7 +158,6 @@ footer {
 
 /* Login y registro */
 
-
 .contenedor {
     display: inline-block; 
     margin-top: 30px; 
@@ -176,7 +166,6 @@ footer {
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 /* esto para el contenedor de los botones */
 .botones{
@@ -222,6 +211,7 @@ footer {
     gap: 50px;
 }
 
+
 .portada img{
     width: 300px;
     height: 400px;
@@ -237,5 +227,7 @@ footer {
     margin-top: 30px;
     padding:70px 20px ;
     text-align: justify;
-
 }
+
+/* para paginas generos peliculas y series */
+
