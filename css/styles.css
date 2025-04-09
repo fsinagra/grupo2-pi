@@ -254,3 +254,23 @@ footer {
     color: red;
 }
 
+
+/* RESPONSIVE PARA CELULARES */
+@media (max-width: 420px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    .titulos{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .contenedor {
+        margin: 30px 30px 30px 30px;
+      }
+    .detalle {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;  /* para la distancia entre imagen y bloque texto */
+      }
+}
