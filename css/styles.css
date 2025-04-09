@@ -72,7 +72,7 @@ input {
     color: white;  /* define el color cuando escribis en la barra de busqueda */
 }
 button {
-    background-color: #4a53fb;
+    background-color: #737af7;
     border: none;
     padding: 8px 12px;
     color: white;
@@ -119,7 +119,7 @@ footer {
 .titulos{
     font-size: 30px;
     text-align: left; /* por defecto es left */
-    color: #4a53fb;
+    color: #9297f5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 40px;
     margin-left: 40px;
@@ -230,4 +230,6 @@ footer {
 }
 
 /* para paginas generos peliculas y series */
-
+.generos{
+    font-size: 25px;
+}
