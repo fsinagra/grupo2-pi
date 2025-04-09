@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Genero</title>
+    <title>Resultado de búsqueda</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -26,42 +26,46 @@
             <button type="submit">Buscar</button>
         </form>
     </header>
+
     <main>
-        <h1 class="titulos">Género: Aventura</h1>
+        <h1 class="titulos">Resultado de búsqueda</h1>
+
+        <section class="busqueda">
+        <p>Resultados para: <strong>"Popular"</strong></p>
+        </section>
+
         <section class="principal">
-            <article>
-                <a href="./detallepelicula.html">
+
+            <ul class="lista-resultados">
+                <li>
+                    
+                    <a href="./detallepelicula.html">
                     <img src="./img/nemo.webp" alt="nemo">
                     <p class="tituloPeli">Nemo</p>
-                </a>
-            </article>
-            <article>
-                <a href="./detallepelicula.html">
-                    <img src="./img/zootopia.jpeg" alt="zootopia">
-                    <p class="tituloPeli">Zootopia</p>
-                </a>
-            </article>
-            <article>
-                <a href="./detallepelicula.html">
-                <img src="./img/alicia.jpeg" alt="alicia">
-                <p class="tituloPeli">Alice in Wonderland</p>
-                </a>
-            </article>
-            <article>
-                <a href="./detallepelicula.html">
-                <img src="./img/peter.jpeg" alt="peter">
-                <p class="tituloPeli">Peter Pan</p>
-                </a>
-            </article>
-            <article>
-                <a href="./detalleserie.html">
-                    <img src="./img/phineas.jpg" alt="phineas">
-                    <p class="tituloPeli">Phineas y Ferb</p>
-                </a>
-            </article>
-        </section>
+                    </a>
+            
+                </li>
         
+                <li>
+                    <a href="./detalleserie.html">
+                    <img src="./img/hannah.jpg" alt="hannah">
+                    <p class="tituloPeli">Hannah Montana</p>
+                    </a>
+                </li>
+
+                <li>
+                <img src="./img/mickey.webp" alt="mickey">
+                <p class="tituloPeli">Mickey Navidad</p>
+                </li>
+
+            </ul>
+
+             <!--en caso de no haber resultados -->
+             <p class="no-resultados">No se encontraron resultados para tu búsqueda.</p>
+        
+        </section>
     </main>
+
     <footer>
         <ul>
             <li><a href="#">Términos y condiciones</a></li>
