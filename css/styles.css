@@ -7,11 +7,15 @@
 body {
     background-color: #222; /* Fondo */
     text-align: center; /* esto es para que los formularios de login y register esten centrados */ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* para que se aplique a todos los a */
 a{
     color: white;
     text-decoration: none;
+}
+li{
+    list-style: none;
 }
 /* HEADER */
 .header {
@@ -21,6 +25,7 @@ a{
     padding: 15px 40px;
     background-color: #6174a5; 
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 /* Logo */
 .logo {
@@ -32,19 +37,10 @@ nav{
     margin-left: 40px;
 }
 .botonesheader {
-    display: flex;
-    list-style: none;
+   display: flex;
 }
 .botonesheader li {
     margin-right: 20px;
-}
-.botonesheader a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*  LOGIN  y REGISTER*/
@@ -66,7 +62,6 @@ form {
 input {
     background: transparent;
     border: none;
-    outline: none;
     padding: 8px;
     width: 200px;
     color: white;  /* define el color cuando escribis en la barra de busqueda */
@@ -87,32 +82,20 @@ footer {
     padding: 20px;
     text-align: center;
     width: 100%;
+    margin-top: 40px;
   }
-  
-  footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
+    
   footer ul li {
-    display: inline; /*hace que todo quede en una misma linea */ 
+    display: inline; /*hace que todo quede en una misma linea */
     margin: 0 15px;
   }
    
-  footer span {
-    font-weight: bold;
-  }
-
-  main{
-    margin-bottom: 40px;
-  }
-
   .autoras{
     display: block; /* que salte a una nueva linea y ocupe el ancho disponible */
     margin-top: 10px; /*deja el espacio para el elemento de arriba */
     color: white; /*como todos los otros elementos son a, y define el color con a, solo hay q aplciarle a esto*/ 
-  }
+    font-weight: bold;
+}
   
 /* MAIN, IMAGENES */ 
 
@@ -120,7 +103,6 @@ footer {
     font-size: 30px;
     text-align: left; /* por defecto es left */
     color: #9297f5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 40px;
     margin-left: 40px;
 }
@@ -130,7 +112,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row; /* por defecto es row */ 
-    gap: 50px;
+    gap: 50px; /* distancia entre imagenes principales */ 
 }
 
 .principal img{
@@ -143,7 +125,6 @@ footer {
 .tituloPeli{
     text-align: center;
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     margin-top: 10px; /*lo separa de la imagen de arriba */
 }
@@ -151,7 +132,6 @@ footer {
 .estreno{
     font-size:14px ;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 10px;
     color: white;
 }
@@ -164,7 +144,6 @@ footer {
     margin-bottom: 40px;
     background-color: lightgray;
     padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* esto para el contenedor de los botones */
@@ -211,7 +190,6 @@ footer {
     gap: 50px;
 }
 
-
 .portada img{
     width: 300px;
     height: 400px;
@@ -231,7 +209,7 @@ footer {
 
 /* para paginas generos peliculas y series */
 .generos{
-    font-size: 25px;
+    font-size: 25px;   
 }
 
 /* PAGINA RESULTADO BUSQUEDA */
@@ -242,18 +220,22 @@ footer {
     text-align: center;
 }
 
-.lista-resultados {
+.principal ul {
     display: flex; /* Hace que los elementos estén en una fila */
     flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si no caben */
-    gap: 20px; /* Espacio entre los elementos */
-    list-style: none; /* Quita los estilos de lista */
+    gap: 50px; /* Espacio entre los elementos */
+    justify-content: center;
 }
 
 .no-resultados {
     display: none; /* Ocultarlo por defecto */
-    color: red;
+    color: red; /* que lo muestre en color rojo como alerta */
 }
 
+/* PARA LA ALTURA DE LOS FOOTERS EN GENERO */ 
+.altura{
+    height: 450px;
+}
 
 /* RESPONSIVE PARA CELULARES */
 @media (max-width: 420px) {
@@ -261,6 +243,16 @@ footer {
         flex-direction: column;
         gap: 10px;
       }
+    .botonesheader {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .iniciosesion{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     .titulos{
         margin: 10px 0;
         text-align: center;
