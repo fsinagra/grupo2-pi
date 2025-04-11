@@ -6,13 +6,14 @@
 }
 body {
     background-color: #222; /* Fondo */
-    text-align: center; /* esto es para que los formularios de login y register esten centrados */ 
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 /* para que se aplique a todos los a */
 a{
-    color: white;
     text-decoration: none;
+    color: white;  
 }
 li{
     list-style: none;
@@ -24,7 +25,6 @@ li{
     justify-content: space-between;
     padding: 15px 40px;
     background-color: #6174a5; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
 }
 /* Logo */
@@ -46,7 +46,7 @@ nav{
 /*  LOGIN  y REGISTER*/
 .iniciosesion {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
 }
 .iniciosesion a {
    padding: 8px 10px ;
@@ -65,6 +65,7 @@ input {
     padding: 8px;
     width: 200px;
     color: white;  /* define el color cuando escribis en la barra de busqueda */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 button {
     background-color: #737af7;
@@ -72,28 +73,26 @@ button {
     padding: 8px 12px;
     color: white;
     border-radius: 5px;
-    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* FOOTER */
-
 footer {
     background-color: #6174a5;
     padding: 20px;
     text-align: center;
-    width: 100%;
     margin-top: 40px;
   }
-    
+
   footer ul li {
     display: inline; /*hace que todo quede en una misma linea */
     margin: 0 15px;
+    color: white;
   }
    
   .autoras{
     display: block; /* que salte a una nueva linea y ocupe el ancho disponible */
     margin-top: 10px; /*deja el espacio para el elemento de arriba */
-    color: white; /*como todos los otros elementos son a, y define el color con a, solo hay q aplciarle a esto*/ 
     font-weight: bold;
 }
   
@@ -112,20 +111,20 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row; /* por defecto es row */ 
-    gap: 50px; /* distancia entre imagenes principales */ 
-}
+    padding: 25px; /* Espacio extra alrededor  */
+ }
 
 .principal img{
     width: 200px;
     height: 300px;
     margin-top: 30px;
     border-radius: 10px;
+    margin-left: 20px; 
 }
 
 .tituloPeli{
     text-align: center;
     font-size: 18px;
-    color: white;
     margin-top: 10px; /*lo separa de la imagen de arriba */
 }
 
@@ -133,37 +132,36 @@ footer {
     font-size:14px ;
     text-align: center;
     margin-top: 10px;
-    color: white;
 }
 
 /* Login y registro */
-
 .contenedor {
     display: inline-block; 
     margin-top: 30px; 
     margin-bottom: 40px;
-    background-color: lightgray;
+    background-color:lightgrey;
     padding: 20px;
 }
 
 /* esto para el contenedor de los botones */
 .botones{
     display: flex;
-    justify-content: center; /* centra los botones*/
+    justify-content:space-around; /* centra los botones*/
     margin-top: 20px;
-    gap: 10px ;  /* esto separa los botones */ }
+}
 
 /* esto para los botones en si */
 .botones button{
     background-color: #8a90f4;
-    color: white;
 }
 
 /* esto es para los titulos inicio sesion y registro */
 .contenedor h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: rgb(19, 12, 12);
+}
+.contenedor{
+    color: rgb(19, 12, 17) ;
 }
 .campotexto{
     width: 100%;
@@ -171,7 +169,7 @@ footer {
     margin-top: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    background-color: rgb(14, 2, 2);
+    background-color: rgb(59, 58, 58);
 }
 
 /* esto para el cambio entre formularios */
@@ -184,10 +182,8 @@ footer {
 
 /* DETALLE PELICULAS Y SERIES*/
 .detalle{
-    color: white;
     display: flex;
     justify-content: center;
-    gap: 50px;
 }
 
 .portada img{
@@ -198,7 +194,7 @@ footer {
 }
 
 .info{
-    background-color: rgba(19, 54, 87, 0.574);
+    background-color: rgba(51, 90, 127, 0.574);
     width: 300px;
     border-radius: 10px;
     height: 400px;
@@ -206,24 +202,19 @@ footer {
     padding:70px 20px ;
     text-align: justify;
 }
-
 /* para paginas generos peliculas y series */
 .generos{
     font-size: 25px;   
 }
-
 /* PAGINA RESULTADO BUSQUEDA */
-
 .busqueda{
-    color: white;
     font-size: 25px;
     text-align: center;
 }
-
 .principal ul {
     display: flex; /* Hace que los elementos estén en una fila */
     flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si no caben */
-    gap: 50px; /* Espacio entre los elementos */
+    padding: 25px; /* Espacio entre los elementos */
     justify-content: center;
 }
 
@@ -241,17 +232,21 @@ footer {
 @media (max-width: 420px) {
     .header {
         flex-direction: column;
-        gap: 10px;
-      }
+    }
     .botonesheader {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .botonesheader li{
+        margin-right: 0;
+    }
+    nav{
+        margin-left: 0;
     }
     .iniciosesion{
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        align-items: center; 
     }
     .titulos{
         margin: 10px 0;
@@ -263,6 +258,5 @@ footer {
     .detalle {
         flex-direction: column;
         align-items: center;
-        gap: 15px;  /* para la distancia entre imagen y bloque texto */
-      }
+      }  
 }
