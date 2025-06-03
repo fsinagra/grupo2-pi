@@ -21,9 +21,15 @@
                 <li> <a href="./generoseries.html"> GÉNEROS SERIES</a></li>
             </ul>
         </nav>
-        <form action='./resultadobusqueda.html'>
+        <form action="./resultadobusqueda.html" method="GET">
             <input type="search" name="buscador" id="busqueda" placeholder="Escribe tu búsqueda">
             <button type="submit">Buscar</button>
+            <label>
+                <input type="radio" name="tipo" value="pelicula" checked> Películas
+              </label>
+              <label>
+                <input type="radio" name="tipo" value="serie"> Series
+              </label>
         </form>
     </header>
 

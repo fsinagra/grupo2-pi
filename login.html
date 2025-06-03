@@ -8,7 +8,6 @@
 </head>
 <body>
     <header class="header">
-        
         <a href="./index.html">
             <img class="logo" src="./img/logo.png" alt="logo"></a>
         <section class="iniciosesion">
@@ -22,12 +21,17 @@
                 <li> <a href="./generoseries.html"> GÉNEROS SERIES</a></li>
             </ul>
         </nav>
-        <form action='./resultadobusqueda.html' method="GET">
+        <form action="./resultadobusqueda.html" method="GET">
             <input type="search" name="buscador" id="busqueda" placeholder="Escribe tu búsqueda">
             <button type="submit">Buscar</button>
+            <label>
+                <input type="radio" name="tipo" value="pelicula" checked> Películas
+              </label>
+              <label>
+                <input type="radio" name="tipo" value="serie"> Series
+              </label>
         </form>
     </header>
-
     <main>
          <form class='contenedor' action="index.html" method="GET">
             <section>

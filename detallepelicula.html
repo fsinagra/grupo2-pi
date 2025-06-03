@@ -22,27 +22,28 @@
                 <li> <a href="./generoseries.html"> GÉNEROS SERIES</a></li>
             </ul>
         </nav>
-        <form action='./resultadobusqueda.html'>
+        <form action="./resultadobusqueda.html" method="GET">
             <input type="search" name="buscador" id="busqueda" placeholder="Escribe tu búsqueda">
             <button type="submit">Buscar</button>
+            <label>
+                <input type="radio" name="tipo" value="pelicula" checked> Películas
+              </label>
+              <label>
+                <input type="radio" name="tipo" value="serie"> Series
+              </label>
         </form>
     </header>
 
     <main>
-         <section class="detalle">
-            <div class="portada">
-                <img src="./img/intensamente.jpg" alt="Portada de la película">
-            </div>
-            <div class="info">
-                <h1>Intensamente 2</h1>
-                <p> <strong>Calificación:</strong> ⭐⭐⭐⭐ (4/5)</p>
-                <p> <strong>Fecha de estreno:</strong> 14 de junio de 2024</p>
-                <p> <strong>Duración:</strong>1h 35m</p>
-                <p> <a href="./detallegenero.html"><strong>Género:</strong> Infantil, Aventura</p></a>
-                <p> <strong>Sinopsis:</strong> Ahora que es adolescente, Riley experimenta nuevos asentimientos como Ansiedad y Envidia, que se imponen a los viejos mientras ella duda sobre si abandonar a sus antiguas amigas por otras de la escuela secundaria.</p>
-            </div>
+        <section class="detalle">
+          <div class="portada">
+            <img src="" alt="Portada de la película">
+          </div>
+          <div class="info">
+            <!-- Acá se inyectará la información de la película -->
+          </div>
         </section>
-    </main>
+      </main>      
 
     <footer>
         <ul>
@@ -52,5 +53,6 @@
           </ul>
     </footer>
 
+    <script src="./JS/detallepelicula.js"></script>
 </body>
 </html>
