@@ -223,10 +223,7 @@ footer {
     color: red; /* que lo muestre en color rojo como alerta */
 }
 
-/* PARA LA ALTURA DE LOS FOOTERS EN GENERO */ 
-.altura{
-    height: 450px;
-}
+
 
 /* RESPONSIVE PARA CELULARES */
 @media (max-width: 420px) {
