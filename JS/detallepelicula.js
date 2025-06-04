@@ -6,7 +6,7 @@ let id = queryObj.get("id");
 console.log("ID:", id);
 
 // URL para traer la info de la película (endpoint de detalle)
-let url = `https://api.themoviedb.org/3/movie/${id}?api_key=3fa0a6eda99c0d478223db4a24042745&language=es-ES`;
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=3fa0a6eda99c0d478223db4a24042745`;
 
 fetch(url)
   .then(function(response){
@@ -21,8 +21,8 @@ fetch(url)
       <p><strong>Calificación:</strong> ${data.vote_average}</p>
       <p><strong>Fecha de estreno:</strong> ${data.release_date}</p>
       <p><strong>Duración:</strong> ${data.runtime} minutos</p>
-      <p><strong>Género:</strong> ${obtenerGeneros(data.genres)}</p>
       <p><strong>Sinopsis:</strong> ${data.overview}</p>
+      <p><strong>Género:</strong> ${obtenerGeneros(data.genres)}</p>
     `;
 
     let imagen = document.querySelector(".portada img");
@@ -32,19 +32,16 @@ fetch(url)
   .catch(function(error){
     console.log(error);
   });
-
-function obtenerGeneros(generosArray) {
-  let generos = "";
-  for (let i = 0; i < generosArray.length; i++) {
-    generos += generosArray[i].name;
-    if (i < generosArray.length - 1) {
-      generos += ", ";
+  function obtenerGeneros(generosArray) {
+    let generos = "";
+    for (let i = 0; i < generosArray.length; i++) {
+      generos += generosArray[i].name;
+      if (i < generosArray.length - 1) {
+        generos += ", ";
+      }
     }
+    return generos;
   }
-  return generos;
-}
-
-
 
 
 
