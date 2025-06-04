@@ -9,12 +9,9 @@ fetch(URL)
   })
   .then(function (data) {
     let pelis = data.results;
-
     let posicion = 0; // contador para recorrer el array de pelis de a 5 en cada sección
-
     for (let i = 0; i < secciones.length; i++) {
       let contenido = "";
-
       for (let j = 0; j < 5; j++) {
         if (posicion < pelis.length) {
           let pelicula = pelis[posicion];
@@ -30,7 +27,6 @@ fetch(URL)
           posicion++; // sumamos 1 para pasar a la siguiente peli
         }
       }
-
       secciones[i].innerHTML = contenido;
     }
   })
