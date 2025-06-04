@@ -199,7 +199,7 @@ footer {
     border-radius: 10px;
     height: 400px;
     margin-top: 30px;
-    padding:70px 20px ;
+    padding:5px 20px ;
     text-align: justify;
 }
 /* para paginas generos peliculas y series */
@@ -219,10 +219,9 @@ footer {
 }
 
 .no-resultados {
-    display: none; /* Ocultarlo por defecto */
+    /* display: none; /* Ocultarlo por defecto */
     color: red; /* que lo muestre en color rojo como alerta */
 }
-
 
 
 /* RESPONSIVE PARA CELULARES */

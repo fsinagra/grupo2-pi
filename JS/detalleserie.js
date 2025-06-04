@@ -18,8 +18,7 @@ fetch(url)
     section.innerHTML = `
       <h1>${data.original_name}</h1>
       <p><strong>Calificación:</strong> ${data.vote_average}</p>
-      <p><strong>Fecha de estreno:</strong> ${data.release_date}</p>
-      <p><strong>Duración:</strong> ${data.runtime} minutos</p>
+      <p><strong>Fecha de estreno:</strong> ${data.first_air_date}</p>
       <p><strong>Sinopsis:</strong> ${data.overview}</p>
       <p><strong>Género:</strong> ${obtenerGeneros(data.genres)}</p>
     `;
