@@ -16,14 +16,15 @@ fetch(url)
     let section = document.querySelector(".info");
     console.log(data);
 
-    section.innerHTML = `
-      <h1>${data.title}</h1>
-      <p><strong>Calificación:</strong> ${data.vote_average}</p>
-      <p><strong>Fecha de estreno:</strong> ${data.release_date}</p>
-      <p><strong>Duración:</strong> ${data.runtime} minutos</p>
-      <p><strong>Sinopsis:</strong> ${data.overview}</p>
-      <p><strong>Género:</strong> ${obtenerGeneros(data.genres)}</p>
-    `;
+    let contenido = "";
+
+    contenido = `<h1>${data.title}</h1> 
+    <p><strong>Calificación:</strong> ${data.vote_average}</p>
+    <p><strong>Fecha de estreno:</strong> ${data.release_date}</p>
+    <p><strong>Sinopsis:</strong> ${data.overview}</p>
+    <p><strong>Género:</strong> ${obtenerGeneros(data.genres)}</p>`;
+
+    section.innerHTML = contenido;
     let imagen = document.querySelector(".portada img");
     imagen.src = "https://image.tmdb.org/t/p/w500/" + data.poster_path;
     imagen.alt = "Portada de " + data.title;
@@ -38,7 +39,7 @@ fetch(url)
     // Recorro el array de géneros que me llega como parámetro
     for (let i = 0; i < generosArray.length; i++) {
       // Por cada genero creo un enlace que lleva a la página de detalle de género, identificando con  el id del género 
-      generos += `<a href="./detallegeneropelicula.html?id=${generosArray[i].id}">${generosArray[i].name}</a>`;
+      generos += `<a href="./detallegeneropelicula.html?id=${generosArray[i].id}&nombreGenero=${generosArray[i].name}">${generosArray[i].name}</a>`;
       // si no es el último género, agrego una coma y espacio para separarlos
       if (i < generosArray.length - 1) {
         generos += ", ";

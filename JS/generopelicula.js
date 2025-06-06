@@ -14,9 +14,9 @@ fetch(url)
     for (let i = 0; i < generos.length; i++) {
       contenido = contenido + `
         <li>
-          <a href="./detallegeneropelicula.html?id=${generos[i].id}&tipo=pelicula">${generos[i].name}</a>
+          <a href="./detallegeneropelicula.html?id=${generos[i].id}&tipo=pelicula&nombreGenero=${generos[i].name}">${generos[i].name}</a>
         </li>
-      `;
+      `; // esta doble generos[i].name porque la primera vez es como parametro para href, y la segunda para el texto visible
     }
     lista.innerHTML = contenido;
   })

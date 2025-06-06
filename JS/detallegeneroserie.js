@@ -9,6 +9,7 @@ let urlSeriesPorGenero = `https://api.themoviedb.org/3/discover/tv?api_key=3fa0a
 let tituloGenero = document.querySelector(".titulos");
 let listaGeneros = document.querySelector(".listaGeneros"); // elemento donde estarán los géneros (igual que en películas)
 tituloGenero.innerText = nombreGenero;
+
 fetch(urlSeriesPorGenero)
   .then(function (response) {
     return response.json();
@@ -34,3 +35,4 @@ fetch(urlSeriesPorGenero)
   .catch(function (error) {
     console.log(`Error: ${error}`);
   });
+

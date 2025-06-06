@@ -18,7 +18,7 @@ textoBusqueda.innerHTML = 'Resultados para: "' + termino + '"';
 
 // Muestro el spinner mientras cargo los resultados
 spinner.innerHTML = "Cargando resultados...";
-noResultados.innerHTML = "";
+noResultados.innerHTML = ""; // lista vacia para que no vuelva a aparecer 
 lista.innerHTML = "";
 
 // URL de búsqueda para películas
