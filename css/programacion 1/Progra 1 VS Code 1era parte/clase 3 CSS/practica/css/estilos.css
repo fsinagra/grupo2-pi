@@ -1,0 +1,9 @@
+body{font-family: 'Times New Roman', Times, serif; background-image: url("../img/fondo.jpg");background-repeat: no-repeat; background-size: cover;}
+
+h1{text-align: center; font-size: 52px;}
+
+h2{text-align: center; background-color: black; color: rgba(255, 255, 255, 0.9);}
+
+ol{font-weight: bold;}
+
+ul{background-color: red; color: white; text-align: center; text-decoration: underline;}

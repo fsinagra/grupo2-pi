@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="iniciosesion">
+            <article class="login"> <a href="./login.html">Login</a> </article>
+            <article class="register"> <a href="./registro.html">Register</a> </article>
+        </section>
+        <section class="imagen">
+            <img class="logo" src="./img/logo.jpg" alt="Kitchening">
+        </section>
+        <nav class="nav">
+            <ul class="lista-desordenada">
+                <li> <a href="">HOME</a> </li>
+                <li> <a href="">QUIENES</a> </li>
+                <li> <a href="">SERVICIOS</a> </li>
+                <li> <a href="">PORTFOLIO</a> </li>
+                <li> <a href="">SUCURSALES</a> </li>
+                <li> <a href="">CONTACTO</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="subtitulo">
+            <h2>REGISTRATE</h2>
+            <article>
+                <form action=".index.html" method="get">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" placeholder="Ingresa tu mail">
+                    </div>
+                    <div>
+                        <label for="contraseña">Nombre</label>
+                        <input type="password" name="contraseña" id="contraseña" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div>
+                        <select name="pais" id="pais">
+                            <option value="bra">Brasil</option>
+                            <option value="arg">Argentina</option>
+                            <option value="per">Perú</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Masculino</span><input type="radio" name="genero" value="Masculino">
+                        <span>Femenino</span><input type="radio" name="genero" value="Femenino">
+                    </div>
+                    <div>
+                        <span>tenis</span><input type="checkbox" name="hobby" value="tenis">
+                        <span>cricket</span><input type="checkbox" name="hobby" value="cricket">
+                    </div>
+                    <div>
+                        <h3>Dejanos tus sugerencias</h3>
+                        <textarea name="sugerencias" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar respuestas">
+                    <button type="submit">Enviar respuestas</button>
+
+                    
+
+                </form>
+            </article>
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+    </main>
+    
+</body>
+</html>

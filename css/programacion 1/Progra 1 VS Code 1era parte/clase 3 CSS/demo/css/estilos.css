@@ -1,0 +1,15 @@
+
+
+body{
+background-color: rgba(70, 210, 245, 0.961);
+}
+
+h1{background-color: aqua;}
+
+.subtitulo{color: aliceblue; text-align: center;}
+
+
+.listaDesordenada .verde{color: green;}
+
+li{color: red;}
+

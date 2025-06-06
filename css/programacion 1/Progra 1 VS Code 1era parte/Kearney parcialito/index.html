@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Parcialito 2023 TM01</title>
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <div class="acceso-permitido turno-maniana">
+        <header id="header">
+            <nav>
+                <!-- Punto 1: LOGO DEL SITIO. 👇 Completar codigo entre estas lineas  -->
+                <img src="./img/dh.png" alt="Digital House Logo">
+
+                <!-- Punto 1: LOGO DEL SITIO. 👆  Completar codigo entre estas lineas -->
+                <!-- Punto 2: MENU DE NAVEGACIÓN.👇  Completar codigo entre estas lineas  -->
+                <ul>
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#languages">Usuario</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <!-- Punto 2: MENU DE NAVEGACIÓN.👆  Completar codigo entre estas lineas  -->
+            </nav>
+        </header>
+        <main class="color-orange" id="main">
+            <section class="home">
+                <h1>¡Bienvenidos al mundo de la progamación!</h1>
+            </section>
+
+            <section class="about-me">
+              <h2>Hola soy "Tomás Kearney"</h2>
+              <img class="avatar" id="avatar" src="img/astronaute.png" alt="avatar">
+              <h2 class="subtitulo ">En Programación 1 voy a aprender:</h2>
+            </section>
+
+            <section class="section-languages" id="languages">
+                <article class="html5">
+                  <h2 class="title-languages">HTML</h2>
+                  <img class="img-language img-html" src="img/html.png" alt="">
+                </article>
+                <article class="css3">
+                    <h2 class="title-languages">CSS</h2>
+                    <img class="img-language img-css" src="img/css.png" alt="">
+                </article>
+                <article class="js">
+                    <h2 class="title-languages ">JAVASCRIPT</h2>
+                    <img class="img-language img-js" src="img/js.png" alt="">
+                </article>
+            </section>
+
+            <h2 class="subtitle-products">Aquí encontrarás información sobre la misión de exploración a este nuevo mundo ¡Elige la categoría en la que deseas aventurarte!</h2>
+            <section class="section-products">
+                <article class="article-products">
+                    <p class="title-products color-orange">Cohetes</p>
+                    <img class="img-products" src="img/1.png" alt="">
+                </article>
+                <article class="article-products">
+                  <p class="title-products color-orange">Planetas</p>
+                  <img class="img-products" src="img/2.png" alt="">
+                </article>
+                <article class="article-products">
+                    <p class="title-products color-orange">Asteroides</p>
+                    <img class="img-products" src="img/3.png" alt="">
+                </article>
+                <article class="article-products">
+                    <p class="title-products color-orange">Lunas</p>
+                    <img class="img-products" src="img/4.png" alt="">
+                </article>
+                <article class="article-products">
+                    <p class="title-products color-orange">Armamento</p>
+                    <img class="img-products" src="img/5.png" alt="">
+                </article>
+                <article class="article-products">
+                    <p class="title-products color-orange">Satelites</p>
+                    <img class="img-products" src="img/6.png" alt="">
+                </article>
+            </section>
+
+            <section class="section-contact" id="contact">
+                <article class="article-contact">
+                  <h2 class="subtitle-contact color-white">Contactarnos</h2>
+                  <!-- Punto 6: 👇 Creá el formulario entre estas líneas -->
+                  <form action=".index.html" method="get">
+                    <div>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <input type="email" name="mail" id="mail" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <select name="pais" id="pais">
+                            <option value="bra">Brasil</option>
+                            <option value="arg">Argentina</option>
+                            <option value="per">Perú</option>
+                            <option value="bol">Bolivia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="comentario" id="" cols="30" rows="10">Ingrese un comentario</textarea>
+                    </div>
+                    <button type="submit">Enviar respuestas</button>
+                </form>
+                    <!-- Punto 6: 👆 Creá el formulario entre estas líneas -->
+                </article>
+            </section>
+
+        </main>
+        <footer>
+            <div class="copyright">
+                <h2>Digital House &#169; 2023</h2>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>

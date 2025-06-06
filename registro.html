@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <img class="logo" src="./img/logo.png" alt="logo"></a>
+        <section class="iniciosesion">
+            <article><a href="./login.html">LOGIN</a></article>
+            <article><a href="./registro.html">REGISTER</a></article>
+        </section>
+        <nav>
+            <ul class="botonesheader">
+                <li> <a href="./index.html">HOME</a> </li>
+                <li> <a href="./generopelicula.html"> GÉNEROS PELICULAS</a></li>
+                <li> <a href="./generoseries.html"> GÉNEROS SERIES</a></li>
+            </ul>
+        </nav>
+        <form action="./resultadobusqueda.html" method="GET">
+            <input type="search" name="buscador" id="busqueda" placeholder="Escribe tu búsqueda">
+            <button type="submit">Buscar</button>
+            <label>
+                <input type="radio" name="tipo" value="pelicula" checked> Películas
+              </label>
+              <label>
+                <input type="radio" name="tipo" value="serie"> Series
+              </label>
+        </form>
+    </header>
+
+    <main>
+        <form class='contenedor' action="./login.html" method="GET">
+            <section>
+                <h2>REGISTRO</h2>
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input class= "campotexto" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="Apellido">Apellido</label>
+                        <input class= "campotexto" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="mail">Email</label>
+                        <input class= "campotexto"  type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+                    </div>
+
+                    <div>
+                        <label for="contraseña">Contraseña</label>
+                        <input class= "campotexto" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+                    </div>
+
+                    <div>
+                        <span>Acepto terminos y condiciones</span><input type="checkbox" name="TYC" value="TYC" required>
+                    </div>
+
+                    <div>
+                        <a class="cambioformulario" href="./login.html">Ya tengo una cuenta</a>
+                    </div>
+
+                    <div class="botones">
+                        <button type="reset">Resetear formulario</button>
+                        <button type="submit">Enviar respuestas</button> 
+                    <!-- usamos button para submit y no un input porque es mas facil definnir el mismo estilo a los dos botones -->
+                    </div>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>Términos y condiciones</li>
+            <li>Cancelar suscripción</li>
+            <li class="autoras"><span>Francesca Sinagra y Mia Maffi</span></li>
+          </ul>
+    </footer>
+
+</body>
+</html>

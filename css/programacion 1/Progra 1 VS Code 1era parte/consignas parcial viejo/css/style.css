@@ -1,0 +1,426 @@
+
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/****** CSS GENERAL NO TOCAR!******/
+.li-black{
+  color: black;
+}
+body {
+  font-family: Questrial;
+  font-size: 1em;
+  width: 100%;
+  margin: 0;
+
+}
+header {
+  width: 100%;
+}
+.barra-navegacion {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px gray;
+}
+.ul-logo , .ul-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.ul-logo {
+  width: 300px;
+  float: left;
+  display: block;
+}
+.ul-menu {
+  float: right;
+  display: flex;
+  margin-top: 10px;
+}
+.li-menu {
+  margin: 0 30px 0 0;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.li-menu:hover{
+	border-bottom: 1px solid rgb(117, 117, 117);
+  border-width: medium;
+}
+.barra-navegacion a {
+  text-decoration: none;
+}
+.li-logo img{
+  margin-top: -20px;
+  margin-left: -50px;
+}
+
+
+section{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+/****** HOME NO TOCAR!******/
+
+.home {
+  background-color: #24222e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  -webkit-text-stroke: 0.1px black;
+  text-align: center;
+  color:white;
+  font-size: 4em;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/******FEATURES NO TOCAR!**********/
+.features{
+  background: #2f2c3d;
+  padding-bottom: 100px;
+  padding-bottom: 0;
+  height: auto;
+}
+.pseudo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 0;
+  border-top: 5px solid #292635;
+}
+.features-phones{
+  text-align: center;
+  width: 30%;
+}.testimonial-card{
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  width: 30%;
+}
+
+.features-phones img{
+  height: 40%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+h2{
+  letter-spacing: 2px;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin: 5% 0 1% 0;
+}
+
+h5{
+  color: #5f5f5f;
+  font-size: 1.5em;
+  display: hidden;
+}
+.features-phones:hover h5 {
+  color: white; /* NO TOCAR */
+  letter-spacing: 5px; /* NO TOCAR */
+  transition: letter-spacing 0.4s linear; /* NO TOCAR */
+}
+
+
+/****** TESTIMONIALS NO TOCAR *********/
+
+.testimonials{
+  background: #262431;
+  height: auto;
+  padding-bottom: 40px;
+}
+.testimonials img{
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+.testimonials p{
+  padding-top: 30px;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+}
+.testimonial-card{
+  padding: 40px 10px 40px 10px;
+  margin: auto;
+  margin-top: 50px;
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+/****** FORMULARIO NO TOCAR! ********/
+.form{
+    background-image: url(../img/contact-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.form, select{
+  height: auto;
+}
+
+.form-container, select{
+  width: 50%;
+  margin: 5% auto;
+
+}
+.form input, select{
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  background: #413d52;
+  border: 2px solid #9791ae;
+  border-radius: 5px;
+}
+
+
+
+/****** REDES SOCIALES NO TOCAR!!! ********/
+
+.social-network {
+  background: #262431;
+  height: auto;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.social-network h2{
+  margin-bottom: 100px;
+}
+.social-network h5{
+  display: inline-block;
+  margin: 30px;
+}
+.social-network a{
+  text-decoration: none;
+  color: white;
+}
+.social-network a:hover{
+  font-size: 1.2em;
+  -webkit-transition: font-size 0.5s;
+}
+.facebook-icon{
+  width: 25px;
+}
+
+/****** MODELS NO TOCAR! ******/
+
+.models{
+  background: #2f2c3d;
+  height: auto;
+  padding-bottom: 100px;
+}
+.models h2{
+  margin-bottom: 100px;
+}
+.models-container img{
+  width: 100px;
+}
+.models p{
+  margin-top: 20px;
+  color: white;
+  font-size: 1.2em;
+}
+.models-phone1, .models-phone2, .models-phone3{
+  border: 1px solid gray;
+  width: 40%;
+  display: inline-block;
+  padding: 25px;
+  margin: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+}
+
+/******* FOOTER NO TOCAR!! *******/
+
+footer{
+  height: 200px;
+}
+
+
+
+
+
+/* 1) POSICIONAMIENTO INICIO */
+section.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.img-3phoneshome {
+  width: 35%;
+  height: 50%;
+  order: 2;
+  
+
+
+}
+.img-phonehome {
+  width: 50%;
+  height: 70%;
+  order: 1;
+
+
+}
+h1 {
+  width: 0;
+
+  
+
+
+}
+/****** 1) POSICIONAMIENTO FIN ******/
+
+/****** 2.1) PSEUDOSELECTORES INICIO ******/
+.features-phones {
+  background: black; /* NO TOCAR */
+  transition: background 0.5s linear; /* NO TOCAR */
+}
+/****** 2.1) PSEUDOSELECTORES FIN ******/
+
+/****** 2.2) PSEUDOSELECTORES INICIO ******/
+.features-phones {
+  height: 52%; /* NO TOCAR */
+  transition: height 0.4s linear; /* NO TOCAR */
+}
+/****** 2.2) PSEUDOSELECTORES FIN ******/
+
+
+
+/****** 3) FLEXBOX INICO ******/
+.testimonials-container{
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+
+}
+.testimonial-card{
+  width: 30%;
+
+}
+/****** 3) FLEXBOX FIN ******/
+
+/****** 6) FLEXBOX INICIO ******/
+.models-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+}
+/****** 6) FLEXBOX FIN ******/
+
+
+/****** 7) ESTILO INICO ******/
+footer{
+  background-image: url(../img/pattern.svg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+
+
+
+
+}
+/****** 7) ESTILO FIN ******/
+
+
+/******  8.1) MEDIA QUERIES TABLET INICO ******/
+/* tablets, 441px - 768px) */
+
+@media(max-width:768px) {
+
+/******  8.1) MEDIA QUERIES TABLET FIN ******/
+  .testimonial-card { /* NO TOCAR */
+    width: 50%; /* NO TOCAR */
+  }
+}
+
+
+
+/* phones, 440px and down) */
+/******  8.2) MEDIA QUERIES MOBILE INICO ******/
+
+@media(max-width:440px) {
+
+/******  8.2) MEDIA QUERIES MOBILE FIN ******/
+  .testimonial-card { /* NO TOCAR */
+    width: 100%; /* NO TOCAR */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1150px){
+  .img-phonehome{
+    display: none;
+}
+  .img-3phoneshome{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin: 50px auto auto auto;
+    right: 0;
+    left: 0;
+  }
+  h1 {
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    font-size: 2em;
+  }
+  .home {
+    position: relative;
+    height: auto;
+    padding: 200px 0 50px 0;
+  }
+  .li-menu{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .features-phones {
+      width: 100%;
+    }
+    .models p {
+      font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 440px) {
+  .models p {
+    display: none;
+  }
+}
